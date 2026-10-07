@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="card">
+<h2>User Profile</h2>
+<p><b>Name:</b> {{ user.first_name }} {{ user.last_name }}</p>
+<p><b>Mobile:</b> {{ user.mobile }}</p>
+<p><b>Address:</b> {{ user.address }}</p>
+<p><b>Email:</b> {{ user.email }}</p>
+
+<a href="/edit-profile"><button>Edit Profile ✏️</button></a>
+<a href="/logout"><button style="margin-top:8px;">Logout</button></a>
+</div>
+</body>
+</html>

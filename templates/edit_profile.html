@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="card">
+<h2>Edit Profile</h2>
+<form method="POST">
+    <input name="fname" value="{{ user.first_name }}" required>
+    <input name="lname" value="{{ user.last_name }}" required>
+    <input name="mobile" value="{{ user.mobile }}" required>
+    <textarea name="address" rows="2" required>{{ user.address }}</textarea>
+    <button>Update Profile</button>
+</form>
+</div>
+</body>
+</html>
